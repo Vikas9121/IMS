@@ -1,0 +1,68 @@
+# Dependencies
+# -----------
+/node_modules                  # Node.js dependencies
+/.pnp                         # Plug'n'Play
+.pnp.js                       # PnP JavaScript file
+backend/venv/                 # Python virtual environment
+
+# Testing
+# -------
+/coverage                     # Test coverage reports
+
+# Production
+# ----------
+/build                        # Production build files
+
+# Environment Files
+# ---------------
+.env                          # Environment variables
+.env.local                    # Local environment variables
+.env.development.local        # Development environment variables
+.env.test.local              # Test environment variables
+.env.production.local        # Production environment variables
+
+# Logs
+# ----
+npm-debug.log*               # npm debug logs
+yarn-debug.log*              # Yarn debug logs
+yarn-error.log*              # Yarn error logs
+
+# IDE and Editor Files
+# ------------------
+.idea                        # JetBrains IDEs
+.vscode                      # Visual Studio Code
+*.swp                        # Vim swap files
+*.swo                        # Vim swap files
+
+# Python
+# ------
+backend/__pycache__/         # Python bytecode cache
+backend/*/__pycache__/       # Nested Python bytecode cache
+backend/*/*/__pycache__/     # Deep nested Python bytecode cache
+backend/db.sqlite3           # SQLite database file
+
+# OS Generated Files
+# ----------------
+.DS_Store                    # macOS folder attributes
+
+# Frontend
+/frontend/node_modules
+/frontend/build
+/frontend/.env
+/frontend/.env.local
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# Backend
+/backend/venv
+/backend/__pycache__
+/backend/*/__pycache__
+/backend/*/*/__pycache__
+/backend/db.sqlite3
+/backend/.env
+
+# General
+.DS_Store
+.idea
+.vscode
