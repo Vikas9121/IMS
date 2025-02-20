@@ -29,10 +29,12 @@ from core import views
 # Swagger/OpenAPI documentation configuration
 schema_view = get_schema_view(
     openapi.Info(
-        title="Inventory API",
+        title="IMS API",
         default_version='v1',
+        description="Inventory Management System API",
     ),
     public=True,
+    permission_classes=(permissions.AllowAny,),
 )
 
 # URL patterns for the entire project
@@ -44,8 +46,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     # Swagger documentation URLs - API documentation interfaces
-    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),  # Interactive API documentation
-    path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),      # Alternative API documentation
+    path('', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    path('api/docs/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     
     # Authentication endpoints
     path('api/auth/', include([
